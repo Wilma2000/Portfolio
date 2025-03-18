@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile-section">
+           
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="#home"><i class="fas fa-home"></i> <span>Home</span></a>
+            <a href="#services"><i class="fas fa-briefcase"></i> <span>What I Do</span></a>
+            <a href="#skills"><i class="fas fa-tools"></i> <span>Technical Skills</span></a>
+            <a href="#timeline"><i class="fas fa-stream"></i> <span>Timeline</span></a>
+            <a href="#projects"><i class="fas fa-folder"></i> <span>My Work</span></a>
+            <a href="#contact"><i class="fas fa-envelope"></i> <span>How to Reach Me</span></a>
+        </div>
+    
+       <!-- Message Form Popup -->
+        <div id="messageForm" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Intro Section -->
+    <section id="intro-section">
+    <header id="home" class="intro">
+        <div class="intro-content">
+            <div class="intro-text">
+                <p class="hi-text">Hi</p>
+                <h1>I'm Wilma Madiany</h1>
+                <p>I am passionate with technology especially with programming, computer applications with good background in database. I am also equipped with good communication and team players’ skills to enable me work well in different settings. There are also critical thinking skills that allow me to address complex issues and promptly produce a sound solution, and the organizational skills that guarantee the timely completion of any project to the highest quality. Looking forward to use the technical and interpersonal skills with the primary goal of productive innovative contribution to the success of your team and organization.</p>
+            </div>
+            <div class="profile-section">
+                <label for="profile-upload" class="profile-icon">
+                    <img id="profile-image" src="a girl coding.JPG" alt="Your Photo">
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+            </div>
+            
+        </div>
+
+        <div class="section-divider"></div>
+
+
+       
+
+    <!-- Services Section -->
+    <h2 class="section-heading">What I Do!</h2>
+    <p class="section-subheading">Here are the services I offer:</p>
+    <div class="services-container">
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>Creating modern, responsive websites with the latest technologies.</p>
+        </div>
+        <div class="service-box">
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and appealing user experiences.</p>
+        </div>
+        <div class="service-box">
+            <h3>Software Development</h3>
+            <p>Building scalable applications tailored to your needs.</p>
+        </div>
+        <div class="service-box">
+            <h3>Technical Support</h3>
+            <p>Helping businesses maintain and troubleshoot IT systems.</p>
+        </div>
+        <div class="service-box">
+            <h3>SEO Optimization</h3>
+            <p>Improving search rankings to drive organic traffic.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cybersecurity</h3>
+            <p>Ensuring security and data protection for online platforms.</p>
+        </div>
+    </div>
+    
+    <div class="section-divider"></div>
+
+    <!-- Technical Skills -->
+    <h2 class="section-heading">Technical Skills</h2>
+    <p class="section-subheading">Here are some of my technical skills:</p>
+    <div class="technical-skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Ruby on Rails</div>
+        <div class="skill-box">SQL</div>
+        <div class="skill-box">Git</div>
+        <div class="skill-box">Linux</div>
+        <div class="skill-box">Networking</div>
+    </div>
+
+
+    <div class="section-divider"></div>
+    
+
+    <!-- Timeline -->
+    <section id="timeline" class="section">
+        <div class="section-heading">
+            <h2 class="pink-heading">Timeline</h2>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <h3>Information Technology</h3>
+                <p>The Technical University of Kenya</p>
+                <span class="timeline-date">4 Oct 2021-25 Nov 2024</span>
+            </div>
+            <hr class="timeline-divider">
+            <div class="timeline-item">
+                <h3>IT Support Specialist</h3>
+                <p>Lleycharma Agencies</p>
+                <span class="timeline-date">14 Feb 2024-30 Aug 2024</span>
+            </div>
+            <hr class="timeline-divider">
+            <div class="timeline-item">
+                <h3>ICT Attachee</h3>
+                <p>National Social Security Fund</p>
+                <span class="timeline-date">Jul 2023-Sep 2023</span>
+            </div>
+            <hr class="timeline-divider">
+            <div class="timeline-item">
+                <h3>Senior Youth Leadership Training</h3>
+                <p>Southern Nairobi Kajiado Field</p>
+                <span class="timeline-date">11 Jun 2021- 11 Jun 2022</span>
+            </div>
+            <hr class="timeline-divider">
+            <div class="timeline-item">
+                <h3>Certificate in Computer Applications</h3>
+                <p>Trema Mission Institute</p>
+                <span class="timeline-date">Dec 2019 - Feb 2020</span>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="section-divider"></div>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-heading">
+            <h2>My Work</h2>
+            <h3><p class="section-subheading">Here are some of the projects I've worked on</p></h3>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="leesoft homepage.JPG" alt="Project Image" class="project-image">
+                <div class="project-details">
+                    <h3>Leesoft Laundry Website System</h3>
+                    <p>Leesoft is a laundry management system designed to streamline operations for laundry businesses. It helps track customer orders, manage payments, and monitor service status efficiently.</p>
+                    <a href="https://github.com/Wilma2000/LEESOFT-LAUNDRY-WEBSITE-SYSTEM" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="section-divider"></div>
+
+
+    <!-- How to Reach Me -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-heading">How to Reach Me</h2>
+        <p class="section-subheading">Get in touch with me</p>
+    
+        <div class="contact-boxes">
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <p>Email</p>
+                <p>madianywilma@gmail.com</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <p>Phone</p>
+                <p>+254795663798</p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-linkedin"></i>
+                <p>LinkedIn</p>
+                <p><a href="https://www.linkedin.com/in/madiany-wilma-a2808a274/">View Profile</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+                <p><a href="https://github.com/Wilma2000">View Profile</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+    
+
+    
+</body>
+</html>
+
+
