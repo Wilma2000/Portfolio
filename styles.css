@@ -663,59 +663,50 @@ body {
 
 /* Updated CSS for better mobile responsiveness */
 
-/* Ensure the container fits within the screen width */
-.container {
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-/* Adjust sections for better spacing on mobile */
-.section {
-    padding: 20px;
-}
-
-/* Make the profile section responsive */
-.profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-/* Ensure sidebar works well on mobile */
-.sidebar {
-    width: 80px;
-}
-
 @media (max-width: 768px) {
-    /* Stack elements vertically */
-    .projects-container,
-    .skills-container,
-    .timeline-container {
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .intro-section, .projects-section, .contact-section {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .projects-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    /* Adjust font sizes for readability */
-    h1, h2, h3 {
-        font-size: 1.2rem;
+    
+    .project-card {
+        width: 90%;
+        margin-bottom: 20px;
     }
-
-    /* Fix spacing issues */
-    .section {
-        padding: 10px;
+    
+    .skills-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        text-align: center;
     }
-
-    /* Adjust the footer to be fully visible */
+    
     .footer {
         text-align: center;
-        padding: 15px;
+        padding: 10px;
     }
 }
